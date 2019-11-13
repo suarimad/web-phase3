@@ -1,0 +1,654 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* --- TOPBAR --- */
+@font-face{
+    font-family: Avenir;
+    src: url(Avenir.otf);
+}
+
+body {
+    font-family: Avenir;
+}
+.container {
+    box-sizing: border-box;
+}
+
+.topbar {
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 999;
+}
+
+.kiri  {
+    float: left;
+    width: 15%;
+    height: 100%;
+}
+
+.logo {
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #000;
+    font-size: 40px;
+    font-weight: bolder;
+    
+}
+
+.menu {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+
+
+.menu ul li{
+    float: left;
+    width: 16%;
+}
+
+li {
+    list-style: none;
+    text-align: center;
+    font-size: 16px;
+    height: 12px;
+    line-height: 18px;
+    margin-top: 30px;
+}
+
+li {
+    list-style: none;
+    text-align: center;
+    font-size: 16px;
+    height: 35px;
+    line-height: 40px;
+}
+
+li:hover {
+    background-color: grey;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+    padding: 2px;
+}
+
+.kanan {
+    float: left;
+    width: 15%;
+    height: 100%;
+    
+}
+
+/* --- TOPBAR --- */
+
+/* --- HOMEPAGE --- */
+
+.container2  {
+    float: left;
+    width: 100%;
+    height: 1000px;
+    margin: 90px auto;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+}
+
+
+
+.trips {
+    width: 80%;
+    height: 900px;
+    margin: 10px auto;
+}
+
+.trip_tidung {
+    float: left;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 50%;
+}
+
+.tidung {
+    background-image: url(tidung.jpg);
+    background-size: cover; 
+    background-position: 0 0px;
+    width: 100%;
+    height: 250px;
+}
+
+.title1 {
+    margin-top: 5px;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.subtitle1 {
+    float: left;
+    font-size: 15px;
+    margin-top: -5px;
+}
+
+.button1 a{
+    float: right;
+    font-size: 15px;
+    padding: 5px;
+    background-color:  rgb(212, 179, 205);
+    color: #fff;
+    margin-top: -8px;
+    text-decoration: none;
+}
+
+.button1 a:hover {
+    background-color: grey;
+    color: #ffffff;
+}
+hr {
+    margin-top: 2px;    
+}
+
+.trip_pari {
+    float: left;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 50%;
+}
+
+.pari {
+    background-image: url(pari.jpg);
+    background-size: cover; 
+    background-position: 0 -100px;
+    width: 100%;
+    height: 250px;
+}
+
+.title2 {
+    margin-top: 5px;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.subtitle2 {
+    float: left;
+    font-size: 15px;
+    margin-top: -5px;
+}
+
+
+
+.trip_harapan {
+    float: left;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 50%;
+}
+
+.harapan {
+    background-image: url(harapan.jpg);
+    background-size: cover; 
+    background-position: 0 -40px;
+    width: 100%;
+    height: 250px;
+}
+
+.title3 {
+    margin-top: 5px;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.subtitle3 {
+    float: left;
+    font-size: 15px;
+    margin-top: -5px;
+}
+
+.trip_pramuka {
+    float: left;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 50%;
+}
+
+.pramuka {
+    background-image: url(pramuka.jpg);
+    background-size: cover; 
+    background-position: 0 0px;
+    width: 100%;
+    height: 250px;
+}
+
+.title4 {
+    margin-top: 5px;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.subtitle4 {
+    float: left;
+    font-size: 15px;
+    margin-top: -5px;
+}
+
+
+/* --- HOMEPAGE --- */
+
+/* --- AMENITIES --- */
+
+
+
+.facility {
+    height: 1100px;
+    width:70%;
+    margin: 10px auto;
+}
+
+.facility h1{
+    font-size: 40px;
+    color: rgb(85, 85, 85);
+}
+
+.facility ul {
+    float: left;
+}
+
+.facility ul li {
+    
+    list-style-type: disc;
+    text-align: left;
+    font-size: 30px;
+    margin-left: 40px;
+    color: rgb(85, 85, 85);
+    line-height: 30px;
+}
+
+.snorkling {
+    float: right;
+    background-image: url(snorkling.jpg);
+    width: 380px;
+    height: 200px;
+    background-size: cover;
+    background-position: 0 -50px;
+}
+
+.bbq {
+    float: right;
+    background-image: url(bbq.jpg);
+    width: 380px;
+    height: 200px;
+    background-size: cover;
+    background-position: 0 -40px ;
+    margin-top: 10px;
+}
+
+/* --- AMENITIES --- */
+
+/* --- PRICE --- */
+
+
+
+.price {
+    height: 1550px;
+    width:50%;
+    margin: 10px auto;
+}
+
+.price h1{
+    font-size: 40px;
+    color: rgb(85, 85, 85);
+    letter-spacing: 20px;
+}
+
+.price h2 {
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.price_tidung {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+}
+
+.price_pari {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+}
+.price_harapan {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+}
+
+.price_pramuka {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+}
+
+.pricetidung {
+    background-image: url(tidung.jpg);
+    background-size: cover; 
+    background-position: 0 0px;
+    width: 100%;
+    height: 250px;
+}
+
+.pricepari {
+    background-image: url(pari.jpg);
+    background-size: cover; 
+    background-position: 0 -100px;
+    width: 100%;
+    height: 250px;
+}
+.priceharapan {
+    background-image: url(harapan.jpg);
+    background-size: cover; 
+    background-position: 0 0px;
+    width: 100%;
+    height: 250px;
+}
+.pricepramuka {
+    background-image: url(pramuka.jpg);
+    background-size: cover; 
+    background-position: 0 0px;
+    width: 100%;
+    height: 250px;
+}
+.pricetitle1{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    display: none;
+    
+}
+
+.pricetitle1 a{
+    display: inline-block;
+    margin-top: 110px;
+    margin-left: 150px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    color: #000;
+    position: relative;
+    padding: 5px;
+    background-color: #fff;
+    opacity: 1;
+}
+
+.pricetitle1 a:hover {
+    background-color: #7e7e7e;
+    color: #fff;
+}
+.pricetidung:hover .pricetitle1{
+    display: block;
+}
+
+
+.pricepari:hover .pricetitle1{
+    display: block;
+}
+
+.pricetitle2{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    display: none;
+    
+}
+
+.pricetitle2 a{
+    display: inline-block;
+    margin-top: 110px;
+    margin-left: 165px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    color: #000;
+    position: relative;
+    padding: 5px;
+    background-color: #fff;
+    opacity: 1;
+}
+
+.pricetitle2 a:hover {
+    background-color: #7e7e7e;
+    color: #fff;
+}
+.pricepari:hover .pricetitle2{
+    display: block;
+}
+
+
+.pricepari:hover .pricetitle1{
+    display: block;
+}
+
+.pricetitle3{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    display: none;
+    
+}
+
+.pricetitle3 a{
+    display: inline-block;
+    margin-top: 110px;
+    margin-left: 130px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    color: #000;
+    position: relative;
+    padding: 5px;
+    background-color: #fff;
+    opacity: 1;
+}
+
+.pricetitle3 a:hover {
+    background-color: #7e7e7e;
+    color: #fff;
+}
+.priceharapan:hover .pricetitle3{
+    display: block;
+}
+
+
+
+.pricetitle4{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    display: none;
+    
+}
+
+.pricetitle4 a{
+    display: inline-block;
+    margin-top: 110px;
+    margin-left: 130px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    color: #000;
+    position: relative;
+    padding: 5px;
+    background-color: #fff;
+    opacity: 1;
+}
+
+.pricetitle4 a:hover {
+    background-color: #7e7e7e;
+    color: #fff;
+}
+.pricepramuka:hover .pricetitle4{
+    display: block;
+}
+
+
+/* --- PRICE --- */
+
+/* --- FOOTER --- */
+
+.foota {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(212, 179, 205);
+    margin-top: -200px;
+}
+
+.subfoota {
+    width: 70%;
+    margin: 10px auto;
+    box-sizing: border-box; 
+}
+
+.address {
+    width: 50%;
+    float: left;
+    font-size: 18px;
+    letter-spacing: 5px;
+    margin-top: 20px;
+    height: 250px;
+    border-right: 1px solid #000;
+}
+
+.maps {
+    padding: 5px;   
+    margin-top: 10px;
+    border: 1px solid black;
+    width: 300px;
+}
+
+.copyright {
+    margin-top: 208px;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.wa a{
+    width: 60px;
+    height: 60px;
+    background-image: url(wa.png);
+    background-size: cover;
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+
+}
+
+/* --- FOOTER --- */
+
+/* --- RESPONSIVE --- */
+
+
+@media only screen and (max-width:900px) {
+    /* For mobile phones: */
+    .topbar, .logo, .menu{
+      width:100%;
+      height: auto;
+    }
+
+    
+    .menu ul li {
+        width: 33%;
+    }
+
+    .foto {
+        height: 225px;
+        background-size: cover; 
+        background-position: 0 -50px;
+    }
+
+    .cap {
+        font-size: 20px;
+        top: 240px;
+        left: 50px;
+        border: none;
+    }
+
+    .pari, .harapan, .tidung, .pramuka {
+        background-position: 0 0px;
+    }
+
+    .trips, .price {
+        width: 90%;
+    }
+
+    .trip_pari, .trip_harapan, .trip_pramuka, .trip_tidung {
+        width: 100%;
+    }
+    
+    
+    .foota {
+        margin-top: 500px;
+        height: 300px;
+    }
+
+    .address {
+        border-right: none;
+    }
+
+    .copyright{
+        margin-top: 160px;
+    }
+    
+  }
+
+  /* --- RESPONSIVE --- */

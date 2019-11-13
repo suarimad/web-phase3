@@ -1,0 +1,290 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	main: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* --- TOPBAR --- */
+@font-face{
+    font-family: Avenir;
+    src: url(Avenir.otf);
+}
+
+body {
+    font-family: Avenir;
+}
+.container {
+    box-sizing: border-box;
+}
+
+.topbar {
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 999;
+}
+
+.kiri  {
+    float: left;
+    width: 15%;
+    height: 100%;
+}
+
+.logo {
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #000;
+    font-size: 40px;
+    font-weight: bolder;
+    
+}
+
+.menu {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.menu ul li:nth-child(3) {
+    background-color: #eaeaea;
+}
+
+.menu ul li{
+    float: left;
+    width: 16%;
+}
+
+li {
+    list-style: none;
+    text-align: center;
+    font-size: 16px;
+    height: 12px;
+    line-height: 18px;
+    margin-top: 30px;
+}
+
+li {
+    list-style: none;
+    text-align: center;
+    font-size: 16px;
+    height: 35px;
+    line-height: 40px;
+}
+
+li:hover {
+    background-color: grey;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+    padding: 2px;
+}
+
+.kanan {
+    float: left;
+    width: 15%;
+    height: 100%;
+    
+}
+
+
+/* --- TOPBAR --- */
+
+/* --- PRICE --- */
+.container2  {
+    float: left;
+    width: 100%;
+    height: 1000px;
+    margin: 90px auto;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+}
+
+.foto {
+    width: 100%;
+    height: 420px;  
+    background-image: url(gambar3.jpg);
+    background-size: cover;
+    background-position: 0 -270px;
+}
+
+.cap   {
+    position: absolute;
+    top: 380px;
+    color: #fff;
+    font-size: 55px;
+    left: 90px;
+    border-top: 5px solid #fff ;
+    border-bottom: 5px solid #fff;
+    
+}
+
+.price {
+    height: 1100px;
+    width:70%;
+    margin: 10px auto;
+}
+
+.price h1{
+    font-size: 40px;
+    color: rgb(85, 85, 85);
+}
+
+
+
+.snorkling {
+    float: right;
+    background-image: url(snorkling.jpg);
+    width: 380px;
+    height: 200px;
+    background-size: cover;
+    background-position: 0 -50px;
+}
+
+.bbq {
+    float: right;
+    background-image: url(bbq.jpg);
+    width: 380px;
+    height: 200px;
+    background-size: cover;
+    background-position: 0 -40px ;
+    margin-top: 10px;
+}
+
+.foota {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(212, 179, 205);
+    margin-top: -200px;
+}
+
+.subfoota {
+    width: 70%;
+    margin: 10px auto;
+    box-sizing: border-box; 
+}
+
+.address {
+    width: 50%;
+    float: left;
+    font-size: 18px;
+    letter-spacing: 5px;
+    margin-top: 20px;
+    height: 250px;
+    border-right: 1px solid #000;
+}
+
+.maps {
+    padding: 5px;   
+    margin-top: 10px;
+    border: 1px solid black;
+    width: 300px;
+}
+
+.copyright {
+    margin-top: 208px;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+/* --- HOMEPAGE --- */
+
+@media only screen and (max-width:900px) {
+    /* For mobile phones: */
+    .topbar, .logo, .menu{
+      width:100%;
+      height: auto;
+    }
+
+    
+    .menu ul li {
+        width: 33%;
+    }
+
+    .foto {
+        height: 225px;
+        background-size: cover; 
+        background-position: 0 -30px;
+    }
+
+    .cap {
+        font-size: 20px;
+        left: 30px;
+        top: 235px;
+        border: none;
+    }
+
+    .snorkling, .bbq {
+        margin: 10px auto;
+        width: 100%;
+        background-position: 0 0;
+    }
+
+    
+    }
+
+    .foota {
+        margin-top: 500px;
+        height: 300px;
+    }
+
+    .address {
+        border-right: none;
+    }
+
+    .copyright{
+        margin-top: 160px;
+    }
+    
+    .facility ul li:last-child {
+        margin-top: 70px;
+    }
+  }
